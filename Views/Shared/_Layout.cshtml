@@ -1,0 +1,101 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>过程控制数据共享平台</title>
+	<!--[if IE]><link href="~/view_source/Login/css/ie.css" rel="stylesheet" /><![endif]-->
+	<link href="~/view_source/Login/css/style.css" rel="stylesheet" />
+	<link href="~/css/Layout.css" rel="stylesheet" />
+	<script src="~/view_source/Index/js/jquery.min.js"></script>
+	<script src="~/view_source/Index/js/popup.js"></script>
+
+	<script>
+		$(function () {
+			$('#popup').popup({ ifDrag: true, dragLimit: true });
+		});
+	</script>
+
+</head>
+<body>
+	<div id="header">
+		<div class="hdrl"></div>
+		<div class="hdrr"></div>
+		<h1><a href="#">SPCMonitor</a></h1>
+		<p class="user">欢迎, <span>John</span>&nbsp;|&nbsp;<a href="#" id="btn1">设置</a>&nbsp;|&nbsp;<a href="#">退出</a></p>
+	</div>
+	<div id="MainContent">
+		@RenderBody()
+	</div>
+
+
+
+
+
+
+
+
+
+	<div id="popup">
+		<div class="title">
+			<p data-title="管理权限验证"></p>
+			<span>X</span>
+		</div>
+		<div class="cont">
+			<div class="block small center login" style="margin:0px; padding:0px;">
+				<div class="block_content">
+					<form id="loginform" action="#" method="post">
+						<p><label>用户名:</label><br /><input type="text" class="text" value="" /></p>
+						<p><label>密码:</label><br /><input type="password" class="text" value="" /></p>
+						<p><input type="submit" class="submit" value="验证" /></p>
+					</form>
+				</div>
+				<div class="bendl"></div>
+				<div class="bendr"></div>
+			</div>
+		</div>
+	</div>
+	@*<div id="mask_shadow"></div>*@
+
+	@*<div id="messages" style="display: none">
+			<div id="hld">
+				<div class="wrapper" style="margin:0px; padding:0px;">
+					<div class="block small center login">
+						<div class="block_head">
+							<div class="bheadl"></div>
+							<div class="bheadr"></div>
+							<h2>过程控制数据共享平台</h2>
+							<ul>
+								<li><a href="#"></a></li>
+							</ul>
+						</div>
+						<div class="block_content">
+							<div class="message info"><p>提示信息</p></div>
+							<form id="loginform" action="#" method="post">
+								<p>
+									<label>用户名:</label><br /><input type="text" class="text" value="" />
+								</p>
+
+								<p>
+									<label>密码:</label><br /><input type="password" class="text" value="" />
+								</p>
+
+								<p>
+									<input type="submit" class="submit" value="登录" />
+								</p>
+							</form>
+						</div>
+						<div class="bendl"></div>
+						<div class="bendr"></div>
+					</div>
+				</div>
+			</div>
+		</div>*@
+	@*<footer>&copy; @DateTime.Now.Year - 伯恩光学（惠州）有限公司</footer>*@
+
+
+
+
+</body>
+</html>

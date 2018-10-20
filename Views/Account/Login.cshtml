@@ -1,0 +1,55 @@
+﻿@model SPCMonitor.Controllers.LoginViewModel;
+@{ Layout = null; }
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>登录</title>
+	<link href="~/view_source/Login/css/style.css" rel="stylesheet" />
+	<!--[if lt IE 8]><link href="~/view_source/Login/css/ie.css" rel="stylesheet" /><![endif]-->
+</head>
+<body>
+	<div id="hld">
+		<div class="wrapper">
+			<div class="block small center login">
+				<div class="block_head">
+					<div class="bheadl"></div>
+					<div class="bheadr"></div>
+					<h2>过程控制数据共享平台</h2>
+					<ul>
+						<li><a href="#"></a></li>
+					</ul>
+				</div>
+				<div class="block_content">
+					<div class="message info"><p>提示信息</p></div>
+					<form id="loginform" action="#" method="post">
+						<p>
+							<label>用户名:</label><br /><input type="text" class="text" value="@Model.Username" />
+						</p>
+
+						<p>
+							<label>密码:</label><br /><input type="password" class="text" value="@Model.Password" />
+						</p>
+
+						<p>
+							<input type="submit" class="submit" value="登录" />
+							@*<input type="checkbox" class="checkbox" checked="checked" id="rememberme" /><label for="rememberme">记住密码</label>*@
+						</p>
+					</form>
+				</div>
+				<div class="bendl"></div>
+				<div class="bendr"></div>
+			</div>
+			@*<div>&copy;@DateTime.Now.Year - 伯恩光学（惠州）有限公司</div>*@
+		</div>
+	</div>
+	<script src="~/view_source/Login/js/jquery.js"></script>
+	<script src="~/view_source/Login/js/custom.js"></script>
+	<script src="~/view_source/Login/js/facebox.js"></script>
+	<script src="~/view_source/Login/js/jquery.img.preload.js"></script>
+	<script src="~/view_source/Login/js/jquery.tablesorter.min.js"></script>
+	<script src="~/view_source/Login/js/jquery.wysiwyg.js"></script>
+</body>
+</html>
