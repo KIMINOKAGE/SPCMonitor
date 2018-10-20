@@ -1,0 +1,16 @@
+﻿body {
+	background-color: #0094ff;
+}
+
+footer {
+	width: 1024px;
+	margin: 0px auto;
+	color: gray;
+	font-size: 14px;
+	font-family:'Microsoft YaHei'
+}
+
+body #MainContent {
+	width: 1024px;
+	margin: 0px auto;
+}
